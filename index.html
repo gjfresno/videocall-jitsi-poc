@@ -2,47 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta n<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>POC con Jitsi Meet SDK</title>
-        <style>
-            #meet {
-                width: 100%;
-                height: 600px;
-            }
-        </style>
-    </head>
-    <body>
-    <h1>Videollamada usando Jitsi Meet SDK</h1>
-    <div id="meet"></div>
-
-    <!-- Cargar el SDK de Jitsi Meet -->
-    <script src="https://meet.jit.si/external_api.js"></script>
-
-    <!-- Cargar el archivo JavaScript externo -->
-    <script src="app.js"></script>
-    </body>
-    </html>
-    ame="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POC con Jitsi Meet SDK</title>
     <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #video-call {
+            width: 50%; /* Ocupa la mitad izquierda */
+            height: 100%;
+            border-right: 2px solid #ccc;
+        }
+
+        #extra-info {
+            width: 50%; /* Ocupa la mitad derecha */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         #meet {
             width: 100%;
-            height: 600px;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-<h1>Videollamada usando Jitsi Meet SDK</h1>
-<div id="meet"></div>
+
+<!-- Contenedor para la videollamada -->
+<div id="video-call">
+    <div id="meet"></div>
+</div>
+
+<!-- Contenedor para información adicional -->
+<div id="extra-info">
+    <h1>Información adicional</h1>
+    <p>En este espacio, en el futuro, se agregará información relevante sobre la aplicación o detalles que los usuarios pueden consultar durante la videollamada.</p>
+</div>
 
 <!-- Cargar el SDK de Jitsi Meet -->
 <script src="https://meet.jit.si/external_api.js"></script>
 
 <!-- Cargar el archivo JavaScript externo -->
 <script src="app.js"></script>
+
 </body>
 </html>
+
